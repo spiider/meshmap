@@ -15,9 +15,36 @@
 			zoom: 6,
 		});
 		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-			attribution: '<a href="http://wirelesspt.net">WirelessPT.net</a> Mesh Network Map',
+			attribution: '<a href="http://wirelesspt.net">WirelessPT.net</a>Portugal  Mesh Network Map',
 		}).addTo(map)
-		var marker = L.marker([39.704766,-8.941203]).addTo(map); // <---------- Moita GW1
+
+// Mesh locations
+
+	// Moita
+		var marker = L.marker([39.704766,-8.941203]).addTo(map); // Moita 
+	
+	// Moitas Venda
+                var marker = L.marker([39.491811,-8.662655]).addTo(map); // cv1
+                var marker = L.marker([39.491892,-8.662585]).addTo(map); // cv2
+                var marker = L.marker([39.492676,-8.662535]).addTo(map); // lav
+                var marker = L.marker([39.491851,-8.660829]).addTo(map); // cv3
+                var marker = L.marker([39.492354,-8.660338]).addTo(map); // pad
+                var marker = L.marker([39.491810,-8.656085]).addTo(map); // zjo
+                var marker = L.marker([39.493680,-8.657866]).addTo(map); // toi
+                var marker = L.marker([39.493618,-8.661135]).addTo(map); // mer
+                var marker = L.marker([39.493854,-8.661820]).addTo(map); // mar
+                var marker = L.marker([39.494818,-8.661687]).addTo(map); // cro
+                var marker = L.marker([39.495256,-8.660499]).addTo(map); // els
+                var marker = L.marker([39.496046,-8.661176]).addTo(map); // nil
+                var marker = L.marker([39.497084,-8.660106]).addTo(map); // nun
+                var marker = L.marker([39.495356,-8.663836]).addTo(map); // dan
+                var marker = L.marker([39.494840,-8.663304]).addTo(map); // pmx
+                var marker = L.marker([39.494607,-8.663572]).addTo(map); // isi
+                var marker = L.marker([39.493249,-8.661323]).addTo(map); // jca
+                var marker = L.marker([39.496263,-8.659796]).addTo(map); // nev
+
+// End of Mesh locations
+
 	}
 	</script>
 </head>
