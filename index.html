@@ -6,7 +6,9 @@
 	<link rel="stylesheet" href="leaflet/leaflet.css" />
 	<script src="leaflet/leaflet.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 	<script type="text/javascript">
 	window.onload = function(){
 		
@@ -15,7 +17,7 @@
 			zoom: 6,
 		});
 		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-			attribution: '<a href="http://wirelesspt.net">WirelessPT.net</a>Portugal  Mesh Network Map',
+			attribution: '<a href="http://wirelesspt.net">WirelessPT.net</a> | Portugal  Mesh Network Map',
 		}).addTo(map)
 
 // Mesh locations
