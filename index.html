@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Mapa WirelessPT</title>
+	<link rel="stylesheet" href="leaflet/leaflet.css" />
+	<script src="leaflet/leaflet.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<script type="text/javascript">
+	window.onload = function(){
+		
+		var map = L.map('map', {
+			center: [39.34,-8.15],
+			zoom: 6,
+		});
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: 'IT WORKS',
+		}).addTo(map)
+	}
+	</script>
+</head>
+
+<body>
+	<div id="map"></div>
+</body>
+</html>
